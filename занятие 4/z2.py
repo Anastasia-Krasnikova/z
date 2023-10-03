@@ -1,3 +1,12 @@
-Python 3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)] on win32
-Type "help", "copyright", "credits" or "license()" for more information.
-пр
+# -- coding: utf-8 —
+A = int (input())
+B = int (input())
+x = []
+if A < B:
+    for i in range(A, B + 1):
+        x.append(i)
+else:
+    for j in range(B, A + 1):
+        x.append(j)
+    x.reverse()
+print(x)
