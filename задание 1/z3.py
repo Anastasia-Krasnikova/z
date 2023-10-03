@@ -1,3 +1,18 @@
-Python 3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)] on win32
-Type "help", "copyright", "credits" or "license()" for more information.
-age=17
+# -- coding: utf-8 —
+age = 17
+if age>=16:
+    print("Поздравляем, Вы поступили в ВГУИТ")
+else:
+    print("сначала нужно окончить школу")
+if 0< age < 75:
+    print(True)
+else:
+    print(False)
+name = "Илья"
+if name != "Иван":
+    print(True)
+else:
+    print(False)
+if age < 16:
+    print("осталось учиться", 16 - age, "лет")
+print("   ")
