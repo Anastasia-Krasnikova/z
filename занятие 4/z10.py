@@ -1,3 +1,23 @@
-Python 3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)] on win32
-Type "help", "copyright", "credits" or "license()" for more information.
-пр
+# -- coding: utf-8 —
+N = int(input())
+K = int(input())
+fib1 = 1
+fib2 = 1
+f = 0
+kol = 0
+c = 0
+A = []
+B = []
+while c < N:
+    kol += 1
+    if len(A) <= 1:
+        A.append(1)
+    else:
+        f = fib1 + fib2
+        fib1 = fib2
+        fib2 = f
+        A.append(f)
+    if kol >= K:
+        B.append(A[-1])
+        c += 1
+print(sum(B))
