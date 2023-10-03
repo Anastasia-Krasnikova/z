@@ -1,3 +1,9 @@
-Python 3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)] on win32
-Type "help", "copyright", "credits" or "license()" for more information.
-пппп
+# -- coding: utf-8 —
+a = int(input())#номер столбца 1 кл
+b = int(input())#номер строки 1 кл
+c = int(input())#номер столбца 2 кл
+d = int(input())#номер строки 2 кл
+if ((a%2 ==1 and b%2 == 1) or (a%2 == 0 and b%2 == 0)) and ((c%2 ==1 and d%2 == 1) or (c%2 == 0 and d%2 == 0)) or ((a%2 == 1 and b%2 == 0) or (a%2 == 0 and b%2 == 1)) and ((c%2 == 1 and d%2 == 0) or (c%2 == 0 and d%2 == 1)):
+    print('Да')
+else:
+    print('Нет')
