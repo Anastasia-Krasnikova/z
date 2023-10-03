@@ -1,3 +1,8 @@
-Python 3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)] on win32
-Type "help", "copyright", "credits" or "license()" for more information.
+# -- coding: utf-8 —
 secounds = 1000008
+days = secounds // 86400
+hours = (secounds % 86400) // 3600
+minutes = (secounds % 3600) // 60
+seconds = secounds % 60
+print( "дни:", days, ";", "часы:", hours,";", "минуты:", minutes,";", "секунды:", seconds)
+print("   ")
