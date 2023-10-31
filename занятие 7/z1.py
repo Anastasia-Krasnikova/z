@@ -1,8 +1,6 @@
-Python 3.10.4 (tags/v3.10.4:9d38120, Mar 23 2022, 23:13:41) [MSC v.1929 64 bit (AMD64)] on win32
-Type "help", "copyright", "credits" or "license()" for more information.
 def code(a):
     min_abs = min(a, key=abs)
-    r_a = al::-1]
+    r_a = [al::-1]
     return min_abs, r_a
 а = input("Введите элементы массива через пробел: ").split()
 a = [float(x) for x in a]
