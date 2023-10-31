@@ -1,18 +1,11 @@
 # -- coding: utf-8 —
-age = 17
-if age>=16:
-    print("Поздравляем, Вы поступили в ВГУИТ")
+age = int(input('возраст абитуриента')) #3
+name = int(input('имя абитуриента'))
+if 0 < age < 75 and name != 'Иван':
+    if age >= 16:
+        print('Поздравляем вы поступили в ВГУИТ')
+    else:
+        print('Сначала нужно окончить школу!')
+        print('осталось до поступления:', 16 - age)
 else:
-    print("сначала нужно окончить школу")
-if 0< age < 75:
-    print(True)
-else:
-    print(False)
-name = "Илья"
-if name != "Иван":
-    print(True)
-else:
-    print(False)
-if age < 16:
-    print("осталось учиться", 16 - age, "лет")
-print("   ")
+    print('не соответствует критериям')
