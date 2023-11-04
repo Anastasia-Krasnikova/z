@@ -1,4 +1,3 @@
-
 def funkzia(n):
     s = 0
     while n > 0:
